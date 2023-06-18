@@ -1,10 +1,14 @@
 import React from "react";
 import shower from "../assets/Shower.png";
-function Shower() {
+function Shower({ setCount }) {
+  const handleclik = () => {
+    setCount(true);
+  };
+
   return (
     <div className="shower">
       <div className="search">
-        <button className="searchbtn">
+        <button className="searchbtn" onClick={handleclik}>
           Search for places
         </button>
         <div className="location">

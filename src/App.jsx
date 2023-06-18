@@ -5,12 +5,15 @@ import Home from ".//component/Home";
 import Search from "./component/Search";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(false);
 
   return (
     <div className="Hero">
-      <Search />
-      {/* <Shower /> */}
+      {count ? (
+        <Search setCount={setCount} />
+      ) : (
+        <Shower setCount={setCount} />
+      )}
       <Home />
     </div>
   );
