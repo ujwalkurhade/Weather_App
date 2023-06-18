@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Hero {
+  display: flex;
+  background-color: rgb(16, 14, 29);
+  width: 100%;
+  color: whitesmoke;
+}
+.shower {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../public/Images/Cloud-background.png);
+  background-size: 35rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: 1.2rem;
+  background-color: rgb(30, 33, 58);
+  color: gray;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.shower img {
+  width: 12rem;
+  text-align: center;
+  margin: 4rem 9rem;
+}
+.searchbtn {
+  padding: 8px;
+  background-color: gray;
+  color: whitesmoke;
+  outline: none;
+  border: none;
+}
+.location {
+  width: 25px;
+  height: 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: black;
+}
+.Tempracher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Tempracher h1 {
+  font-size: 20px;
+  color: whitesmoke;
+}
+.Tempracher h1 samp {
+  font-size: 20px;
+  color: gray;
+}
+.Tempracher h2 {
+  margin-top: 2.5rem;
+  font-size: 2.2rem;
+  color: gray;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: gray;
+  gap: 20px;
+  margin-top: 1rem;
+}
+.home {
+  width: 70%;
+  padding: 40px;
+}
+.Degree_Celsius {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.degree {
+  width: 40px;
+  height: 40px;
+  background-color: aliceblue;
+  padding: 10px;
+  color: black;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.colume {
+  width: 100%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  padding: 30px;
+  margin-top: 25px;
+}
+.colume div {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(30, 33, 58);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.img {
+  margin-top: 12px;
+}
+.img1 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  right: 20px;
+}
+.img2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.img3 {
+  width: 100px;
+  height: 100px;
+}
+.card p {
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+.higlite {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.highlight {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+.highlightCard {
+  width: 400px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(30, 33, 58);
+}
