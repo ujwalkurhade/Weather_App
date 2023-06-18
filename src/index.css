@@ -82,9 +82,8 @@
   padding: 40px;
 }
 .Degree_Celsius {
-  width: 100%;
   display: flex;
-  flex-direction: row-reverse;
+  float: right;
 }
 .degree {
   width: 40px;

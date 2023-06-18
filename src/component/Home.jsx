@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="home">
       <div className="Degree_Celsius">
-        <div className="degree">°F</div>
+        <div className="degree"> °C</div>
         <div
           className="degree"
           style={{
@@ -14,7 +14,7 @@ function Home() {
             color: "white",
           }}
         >
-          °C
+          °F
         </div>
       </div>
 
