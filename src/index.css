@@ -162,3 +162,9 @@
   padding: 10px;
   background-color: rgba(30, 33, 58);
 }
+
+.SearchFild {
+  width: 30%;
+  background-color: rgba(30, 33, 58);
+  padding: 20px;
+}
