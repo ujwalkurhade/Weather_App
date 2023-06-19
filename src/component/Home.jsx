@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Todayhighlite from "./Todayhighlite";
 import Grid from "./grid";
+import axios from "axios";
 
 function Home() {
   return (
@@ -29,3 +30,6 @@ function Home() {
 }
 
 export default Home;
+
+// new Ways of writing code Es6 Es7
+//

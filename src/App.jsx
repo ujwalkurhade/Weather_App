@@ -9,11 +9,7 @@ function App() {
 
   return (
     <div className="Hero">
-      {count ? (
-        <Search setCount={setCount} />
-      ) : (
-        <Shower setCount={setCount} />
-      )}
+      {count ? <Search setCount={setCount} /> : <Shower setCount={setCount} />}
       <Home />
     </div>
   );
