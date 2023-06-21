@@ -23,7 +23,7 @@ function App() {
   }, [city]);
   return (
     <div className="Hero">
-      b {count ? <Search value={city} setCity={setCity} setCount={setCount} /> : <Shower whetherData={WhetherData} setCount={setCount} />}
+      {count ? <Search value={city} setCity={setCity} setCount={setCount} /> : <Shower whetherData={WhetherData} setCount={setCount} />}
       <Home />
     </div>
   );
