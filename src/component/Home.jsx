@@ -1,9 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Todayhighlite from "./Todayhighlite";
 import Grid from "./grid";
 import axios from "axios";
+const api_key = import.meta.env.VITE_API_KEY;
 
 function Home() {
+  const [whetherData, setWhetherData] = useState(null);
+  const fetchData = async () => {
+    const res = await axios.get(`http://jsonblob.com/api/1120565027160735744`);
+
+    // setWhetherData(res.data);
+  };
+
   return (
     <div className="home">
       <div className="Degree_Celsius">

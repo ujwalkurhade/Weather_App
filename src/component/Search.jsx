@@ -1,17 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Search({ setCount }) {
+function Search({ setCount, setCity }) {
   const handleclik = () => {
     setCount(false);
   };
+  const [value, setValue] = useState("");
   return (
     <div className="SearchFild">
       <div>
-        <i
-          class="bx bx-x"
-          style={{ float: "right" }}
-          onClick={handleclik}
-        ></i>
+        <i className="bx bx-x" style={{ float: "right" }} onClick={handleclik}></i>
       </div>
       <div
         style={{
@@ -23,10 +20,12 @@ function Search({ setCount }) {
         }}
       >
         <div className="search1">
-          <i class="bx bx-search"></i>
-          <input type="text" />
+          <i className="bx bx-search"></i>
+          <input type="text" value={value} onChange={(e) => setValue(e.target.value)} />
         </div>
-        <button className="searchbtn2">Search</button>
+        <button className="searchbtn2" onClick={() => setCity(value)}>
+          Search
+        </button>
       </div>
     </div>
   );

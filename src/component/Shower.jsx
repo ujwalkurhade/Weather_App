@@ -1,10 +1,12 @@
 import React from "react";
 import shower from "../assets/Shower.png";
-function Shower({ setCount }) {
+function Shower({ setCount, whetherData }) {
+  console.log(whetherData);
   const handleclik = () => {
     setCount(true);
   };
-
+  const date = new Date();
+  console.log(date);
   return (
     <div className="shower">
       <div className="search">
@@ -18,12 +20,12 @@ function Shower({ setCount }) {
       <img src={shower} alt="" />
       <div className="Tempracher">
         <h1>
-          15 <samp>°C</samp>
+          {whetherData?.main?.temp} <samp>°C</samp>
         </h1>
-        <h2> Shower</h2>
+        <h2> {whetherData?.weather[0]?.main}</h2>
         <div className="data">
-          <p>Today . Fri 5 Jun</p>
-          <i className="bx bx-location-plus">Mumbai</i>
+          <p> </p>
+          <i className="bx bx-location-plus">{whetherData?.name}</i>
         </div>
       </div>
     </div>
